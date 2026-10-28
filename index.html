@@ -34,11 +34,14 @@ h1{font-size:18px;margin:0 0 4px}
 .stats{display:flex;flex-wrap:wrap;gap:3px 10px;font-size:12px;color:var(--sub);margin-top:2px}
 .stats b{color:var(--fg)}
 .empty{padding:40px;text-align:center;color:var(--sub)}
+.navlink{display:inline-flex;align-items:center;gap:6px;margin-top:12px;font:inherit;font-size:14px;font-weight:600;text-decoration:none;padding:9px 18px;border-radius:22px;color:#fff;background:linear-gradient(135deg,#ef4444,#b91c1c);box-shadow:0 6px 16px rgba(239,68,68,.3)}
+.navlink:hover{filter:brightness(1.08)}
 </style></head><body>
 <header>
 <h1>유튜브 트렌딩 수집</h1>
 <div class="meta">수집일 2026-10-28 · 총 <span id="cnt">268</span>건</div>
 <div class="quota">API 할당량(이 수집기 추정) · 이번 실행 <b>517</b> · 오늘 누적 <b>1,035</b> / 10,000 유닛 (10%, PT 2026-10-28 리셋 기준)<div class="qbar"><div class="qfill" style="width:10%"></div></div></div>
+<div><a class="navlink" href="keywords.html">📈 주간 인기 키워드 →</a></div>
 <div class="bar">
 <span class="lbl">지역</span>
 <button data-r="전체" class="rbtn on">전체</button>
