@@ -67,6 +67,7 @@ a{color:inherit}
 .kw .name{font-size:16px;font-weight:700}
 .kw .ext{color:var(--sub);font-size:12px;text-decoration:none}
 .kw .ext:hover{color:var(--accent)}
+.kw .trends{font-size:11px;padding:1px 7px;border:1px solid var(--line);border-radius:6px;white-space:nowrap}
 .star{margin-left:4px;cursor:pointer;color:#4b515a;font-size:15px;line-height:1}
 .star.on{color:#fbbf24}
 .cons{text-align:right;font-size:17px;font-weight:800;color:var(--green)}
@@ -260,6 +261,7 @@ function render(){
       <div class="kw">
         <a class="name" style="text-decoration:none" href="https://www.youtube.com/results?search_query=${q}" target="_blank" rel="noopener">${d.term}</a>
         <a class="ext" href="https://www.youtube.com/results?search_query=${q}" target="_blank" rel="noopener">↗</a>
+        <a class="ext trends" title="Google Trends: 한국 YouTube 검색 추이(최근 7일)" href="https://trends.google.com/trends/explore?date=now%207-d&geo=KR&gprop=youtube&hl=ko&q=${q}" target="_blank" rel="noopener">검색추이</a>
         <span class="star ${star}" onclick="toggleFav('${d.term.replace(/'/g,"\\'")}')">${favs.includes(d.term)?'★':'☆'}</span>
       </div>
       <div class="cons">${fmt(d[consField])}${PERIOD==='24h'?'<small>24시간 증가분</small>':''}</div>
