@@ -1,135 +1,135 @@
 [
  {
-  "term": "직접",
-  "trend": [
-   0,
-   749,
-   409
-  ],
-  "startDate": "10/28",
-  "endDate": "10/30",
-  "lastUpdate": "10.30 06:00"
- },
- {
   "term": "식량",
   "trend": [
    756,
    414,
-   407
+   415
   ],
   "startDate": "10/28",
   "endDate": "10/30",
-  "lastUpdate": "10.30 06:00"
+  "lastUpdate": "10.30 08:00"
+ },
+ {
+  "term": "직접",
+  "trend": [
+   0,
+   749,
+   410
+  ],
+  "startDate": "10/28",
+  "endDate": "10/30",
+  "lastUpdate": "10.30 08:00"
  },
  {
   "term": "정부",
   "trend": [
    756,
    414,
-   391
+   399
   ],
   "startDate": "10/28",
   "endDate": "10/30",
-  "lastUpdate": "10.30 06:00"
- },
- {
-  "term": "슬의생",
-  "trend": [
-   113,
-   460,
-   340
-  ],
-  "startDate": "10/28",
-  "endDate": "10/30",
-  "lastUpdate": "10.30 06:00"
- },
- {
-  "term": "안은진",
-  "trend": [
-   118,
-   464,
-   340
-  ],
-  "startDate": "10/28",
-  "endDate": "10/30",
-  "lastUpdate": "10.30 06:00"
- },
- {
-  "term": "슬기로운의사생활",
-  "trend": [
-   130,
-   475,
-   340
-  ],
-  "startDate": "10/28",
-  "endDate": "10/30",
-  "lastUpdate": "10.30 06:00"
+  "lastUpdate": "10.30 08:00"
  },
  {
   "term": "언슬전",
   "trend": [
    113,
    460,
-   340
+   359
   ],
   "startDate": "10/28",
   "endDate": "10/30",
-  "lastUpdate": "10.30 06:00"
- },
- {
-  "term": "언젠가는슬기로울전공의생활",
-  "trend": [
-   113,
-   460,
-   340
-  ],
-  "startDate": "10/28",
-  "endDate": "10/30",
-  "lastUpdate": "10.30 06:00"
- },
- {
-  "term": "유연석",
-  "trend": [
-   113,
-   460,
-   340
-  ],
-  "startDate": "10/28",
-  "endDate": "10/30",
-  "lastUpdate": "10.30 06:00"
- },
- {
-  "term": "조정석",
-  "trend": [
-   113,
-   460,
-   340
-  ],
-  "startDate": "10/28",
-  "endDate": "10/30",
-  "lastUpdate": "10.30 06:00"
+  "lastUpdate": "10.30 08:00"
  },
  {
   "term": "정경호",
   "trend": [
    113,
    460,
-   340
+   359
   ],
   "startDate": "10/28",
   "endDate": "10/30",
-  "lastUpdate": "10.30 06:00"
+  "lastUpdate": "10.30 08:00"
+ },
+ {
+  "term": "유연석",
+  "trend": [
+   113,
+   460,
+   359
+  ],
+  "startDate": "10/28",
+  "endDate": "10/30",
+  "lastUpdate": "10.30 08:00"
+ },
+ {
+  "term": "조정석",
+  "trend": [
+   113,
+   460,
+   359
+  ],
+  "startDate": "10/28",
+  "endDate": "10/30",
+  "lastUpdate": "10.30 08:00"
+ },
+ {
+  "term": "안은진",
+  "trend": [
+   118,
+   464,
+   359
+  ],
+  "startDate": "10/28",
+  "endDate": "10/30",
+  "lastUpdate": "10.30 08:00"
+ },
+ {
+  "term": "슬기로운의사생활",
+  "trend": [
+   130,
+   475,
+   359
+  ],
+  "startDate": "10/28",
+  "endDate": "10/30",
+  "lastUpdate": "10.30 08:00"
+ },
+ {
+  "term": "슬의생",
+  "trend": [
+   113,
+   460,
+   359
+  ],
+  "startDate": "10/28",
+  "endDate": "10/30",
+  "lastUpdate": "10.30 08:00"
+ },
+ {
+  "term": "언젠가는슬기로울전공의생활",
+  "trend": [
+   113,
+   460,
+   359
+  ],
+  "startDate": "10/28",
+  "endDate": "10/30",
+  "lastUpdate": "10.30 08:00"
  },
  {
   "term": "장원영",
   "trend": [
    186,
    364,
-   298
+   300
   ],
   "startDate": "10/28",
   "endDate": "10/30",
-  "lastUpdate": "10.30 06:00"
+  "lastUpdate": "10.30 08:00"
  },
  {
   "term": "일본",
@@ -140,7 +140,7 @@
   ],
   "startDate": "10/28",
   "endDate": "10/30",
-  "lastUpdate": "10.30 06:00"
+  "lastUpdate": "10.30 08:00"
  },
  {
   "term": "긴급",
@@ -151,7 +151,7 @@
   ],
   "startDate": "10/28",
   "endDate": "10/30",
-  "lastUpdate": "10.30 06:00"
+  "lastUpdate": "10.30 08:00"
  },
  {
   "term": "자막뉴스",
@@ -162,7 +162,7 @@
   ],
   "startDate": "10/28",
   "endDate": "10/30",
-  "lastUpdate": "10.30 06:00"
+  "lastUpdate": "10.30 08:00"
  },
  {
   "term": "요청",
@@ -173,62 +173,73 @@
   ],
   "startDate": "10/28",
   "endDate": "10/30",
-  "lastUpdate": "10.30 06:00"
+  "lastUpdate": "10.30 08:00"
  },
  {
   "term": "안무",
   "trend": [
    140,
    348,
-   271
+   273
   ],
   "startDate": "10/28",
   "endDate": "10/30",
-  "lastUpdate": "10.30 06:00"
+  "lastUpdate": "10.30 08:00"
  },
  {
   "term": "유재석",
   "trend": [
    192,
    304,
-   255
+   257
   ],
   "startDate": "10/28",
   "endDate": "10/30",
-  "lastUpdate": "10.30 06:00"
+  "lastUpdate": "10.30 08:00"
  },
  {
   "term": "정체",
   "trend": [
    118,
    383,
-   253
+   255
   ],
   "startDate": "10/28",
   "endDate": "10/30",
-  "lastUpdate": "10.30 06:00"
+  "lastUpdate": "10.30 08:00"
  },
  {
   "term": "아이브",
   "trend": [
    95,
    296,
-   241
+   244
   ],
   "startDate": "10/28",
   "endDate": "10/30",
-  "lastUpdate": "10.30 06:00"
+  "lastUpdate": "10.30 08:00"
  },
  {
   "term": "방법",
   "trend": [
    242,
    364,
-   237
+   240
   ],
   "startDate": "10/28",
   "endDate": "10/30",
-  "lastUpdate": "10.30 06:00"
+  "lastUpdate": "10.30 08:00"
+ },
+ {
+  "term": "박지원",
+  "trend": [
+   48,
+   359,
+   234
+  ],
+  "startDate": "10/28",
+  "endDate": "10/30",
+  "lastUpdate": "10.30 08:00"
  },
  {
   "term": "리센느",
@@ -239,95 +250,95 @@
   ],
   "startDate": "10/28",
   "endDate": "10/30",
-  "lastUpdate": "10.30 06:00"
+  "lastUpdate": "10.30 08:00"
  },
  {
   "term": "먼저",
   "trend": [
    0,
    286,
-   218
+   219
   ],
   "startDate": "10/28",
   "endDate": "10/30",
-  "lastUpdate": "10.30 06:00"
+  "lastUpdate": "10.30 08:00"
  },
  {
   "term": "무시한",
   "trend": [
    116,
    252,
-   217
+   219
   ],
   "startDate": "10/28",
   "endDate": "10/30",
-  "lastUpdate": "10.30 06:00"
+  "lastUpdate": "10.30 08:00"
  },
  {
   "term": "속은",
   "trend": [
    102,
    348,
-   216
+   217
   ],
   "startDate": "10/28",
   "endDate": "10/30",
-  "lastUpdate": "10.30 06:00"
+  "lastUpdate": "10.30 08:00"
  },
  {
   "term": "이서진",
   "trend": [
    267,
    252,
-   214
+   215
   ],
   "startDate": "10/28",
   "endDate": "10/30",
-  "lastUpdate": "10.30 06:00"
- },
- {
-  "term": "폭로",
-  "trend": [
-   101,
-   382,
-   208
-  ],
-  "startDate": "10/28",
-  "endDate": "10/30",
-  "lastUpdate": "10.30 06:00"
+  "lastUpdate": "10.30 08:00"
  },
  {
   "term": "무슨",
   "trend": [
    179,
    137,
-   204
+   212
   ],
   "startDate": "10/28",
   "endDate": "10/30",
-  "lastUpdate": "10.30 06:00"
+  "lastUpdate": "10.30 08:00"
+ },
+ {
+  "term": "폭로",
+  "trend": [
+   101,
+   382,
+   209
+  ],
+  "startDate": "10/28",
+  "endDate": "10/30",
+  "lastUpdate": "10.30 08:00"
  },
  {
   "term": "여자",
   "trend": [
    0,
    419,
-   204
+   205
   ],
   "startDate": "10/28",
   "endDate": "10/30",
-  "lastUpdate": "10.30 06:00"
+  "lastUpdate": "10.30 08:00"
  },
  {
   "term": "놀라운",
   "trend": [
    275,
    255,
-   202
+   203
   ],
   "startDate": "10/28",
   "endDate": "10/30",
-  "lastUpdate": "10.30 06:00"
+  "lastUpdate": "10.30 08:00"
  },
  {
   "term": "스위스",
@@ -338,84 +349,62 @@
   ],
   "startDate": "10/28",
   "endDate": "10/30",
-  "lastUpdate": "10.30 06:00"
- },
- {
-  "term": "벌어지는",
-  "trend": [
-   75,
-   406,
-   200
-  ],
-  "startDate": "10/28",
-  "endDate": "10/30",
-  "lastUpdate": "10.30 06:00"
- },
- {
-  "term": "박지원",
-  "trend": [
-   48,
-   359,
-   200
-  ],
-  "startDate": "10/28",
-  "endDate": "10/30",
-  "lastUpdate": "10.30 06:00"
+  "lastUpdate": "10.30 08:00"
  },
  {
   "term": "공감",
   "trend": [
    9,
    369,
-   200
+   201
   ],
   "startDate": "10/28",
   "endDate": "10/30",
-  "lastUpdate": "10.30 06:00"
+  "lastUpdate": "10.30 08:00"
+ },
+ {
+  "term": "벌어지는",
+  "trend": [
+   75,
+   406,
+   201
+  ],
+  "startDate": "10/28",
+  "endDate": "10/30",
+  "lastUpdate": "10.30 08:00"
  },
  {
   "term": "헤이지니",
   "trend": [
    101,
    365,
-   199
+   200
   ],
   "startDate": "10/28",
   "endDate": "10/30",
-  "lastUpdate": "10.30 06:00"
+  "lastUpdate": "10.30 08:00"
  },
  {
   "term": "손흥민",
   "trend": [
    259,
    311,
-   193
+   198
   ],
   "startDate": "10/28",
   "endDate": "10/30",
-  "lastUpdate": "10.30 06:00"
+  "lastUpdate": "10.30 08:00"
  },
  {
-  "term": "스테이지",
+  "term": "완료",
   "trend": [
-   93,
-   252,
-   188
+   6,
+   334,
+   190
   ],
   "startDate": "10/28",
   "endDate": "10/30",
-  "lastUpdate": "10.30 06:00"
- },
- {
-  "term": "챔피언십",
-  "trend": [
-   93,
-   308,
-   188
-  ],
-  "startDate": "10/28",
-  "endDate": "10/30",
-  "lastUpdate": "10.30 06:00"
+  "lastUpdate": "10.30 08:00"
  },
  {
   "term": "월드",
@@ -426,95 +415,128 @@
   ],
   "startDate": "10/28",
   "endDate": "10/30",
-  "lastUpdate": "10.30 06:00"
+  "lastUpdate": "10.30 08:00"
  },
  {
-  "term": "완료",
+  "term": "스테이지",
   "trend": [
-   6,
-   334,
-   187
+   93,
+   252,
+   188
   ],
   "startDate": "10/28",
   "endDate": "10/30",
-  "lastUpdate": "10.30 06:00"
+  "lastUpdate": "10.30 08:00"
+ },
+ {
+  "term": "챔피언십",
+  "trend": [
+   93,
+   308,
+   188
+  ],
+  "startDate": "10/28",
+  "endDate": "10/30",
+  "lastUpdate": "10.30 08:00"
  },
  {
   "term": "생기는",
   "trend": [
    176,
    271,
-   183
+   185
   ],
   "startDate": "10/28",
   "endDate": "10/30",
-  "lastUpdate": "10.30 06:00"
- },
- {
-  "term": "말도",
-  "trend": [
-   0,
-   291,
-   176
-  ],
-  "startDate": "10/28",
-  "endDate": "10/30",
-  "lastUpdate": "10.30 06:00"
- },
- {
-  "term": "시니어드라마",
-  "trend": [
-   102,
-   348,
-   175
-  ],
-  "startDate": "10/28",
-  "endDate": "10/30",
-  "lastUpdate": "10.30 06:00"
+  "lastUpdate": "10.30 08:00"
  },
  {
   "term": "골프",
   "trend": [
    131,
    184,
-   174
+   177
   ],
   "startDate": "10/28",
   "endDate": "10/30",
-  "lastUpdate": "10.30 06:00"
+  "lastUpdate": "10.30 08:00"
+ },
+ {
+  "term": "말도",
+  "trend": [
+   0,
+   291,
+   177
+  ],
+  "startDate": "10/28",
+  "endDate": "10/30",
+  "lastUpdate": "10.30 08:00"
+ },
+ {
+  "term": "시니어드라마",
+  "trend": [
+   102,
+   348,
+   176
+  ],
+  "startDate": "10/28",
+  "endDate": "10/30",
+  "lastUpdate": "10.30 08:00"
  },
  {
   "term": "랭킹",
   "trend": [
    184,
    254,
-   173
+   174
   ],
   "startDate": "10/28",
   "endDate": "10/30",
-  "lastUpdate": "10.30 06:00"
+  "lastUpdate": "10.30 08:00"
  },
  {
   "term": "없으면",
   "trend": [
    246,
    210,
-   172
+   174
   ],
   "startDate": "10/28",
   "endDate": "10/30",
-  "lastUpdate": "10.30 06:00"
+  "lastUpdate": "10.30 08:00"
  },
  {
   "term": "뉴스다",
   "trend": [
    0,
    332,
-   171
+   172
   ],
   "startDate": "10/28",
   "endDate": "10/30",
-  "lastUpdate": "10.30 06:00"
+  "lastUpdate": "10.30 08:00"
+ },
+ {
+  "term": "전미도",
+  "trend": [
+   113,
+   131,
+   169
+  ],
+  "startDate": "10/28",
+  "endDate": "10/30",
+  "lastUpdate": "10.30 08:00"
+ },
+ {
+  "term": "보고",
+  "trend": [
+   0,
+   104,
+   164
+  ],
+  "startDate": "10/28",
+  "endDate": "10/30",
+  "lastUpdate": "10.30 08:00"
  },
  {
   "term": "비하인드",
@@ -525,249 +547,260 @@
   ],
   "startDate": "10/28",
   "endDate": "10/30",
-  "lastUpdate": "10.30 06:00"
+  "lastUpdate": "10.30 08:00"
  },
  {
   "term": "앞에서",
   "trend": [
    117,
    182,
-   155
+   157
   ],
   "startDate": "10/28",
   "endDate": "10/30",
-  "lastUpdate": "10.30 06:00"
+  "lastUpdate": "10.30 08:00"
  },
  {
   "term": "비서진",
   "trend": [
    113,
    199,
-   155
+   157
   ],
   "startDate": "10/28",
   "endDate": "10/30",
-  "lastUpdate": "10.30 06:00"
- },
- {
-  "term": "이어",
-  "trend": [
-   48,
-   188,
-   153
-  ],
-  "startDate": "10/28",
-  "endDate": "10/30",
-  "lastUpdate": "10.30 06:00"
- },
- {
-  "term": "전미도",
-  "trend": [
-   113,
-   131,
-   153
-  ],
-  "startDate": "10/28",
-  "endDate": "10/30",
-  "lastUpdate": "10.30 06:00"
- },
- {
-  "term": "숏드라마",
-  "trend": [
-   42,
-   241,
-   151
-  ],
-  "startDate": "10/28",
-  "endDate": "10/30",
-  "lastUpdate": "10.30 06:00"
- },
- {
-  "term": "이번에",
-  "trend": [
-   0,
-   195,
-   145
-  ],
-  "startDate": "10/28",
-  "endDate": "10/30",
-  "lastUpdate": "10.30 06:00"
- },
- {
-  "term": "중국",
-  "trend": [
-   0,
-   193,
-   144
-  ],
-  "startDate": "10/28",
-  "endDate": "10/30",
-  "lastUpdate": "10.30 06:00"
- },
- {
-  "term": "2026년",
-  "trend": [
-   87,
-   253,
-   143
-  ],
-  "startDate": "10/28",
-  "endDate": "10/30",
-  "lastUpdate": "10.30 06:00"
- },
- {
-  "term": "만에",
-  "trend": [
-   38,
-   200,
-   141
-  ],
-  "startDate": "10/28",
-  "endDate": "10/30",
-  "lastUpdate": "10.30 06:00"
- },
- {
-  "term": "꺼낸",
-  "trend": [
-   40,
-   221,
-   137
-  ],
-  "startDate": "10/28",
-  "endDate": "10/30",
-  "lastUpdate": "10.30 06:00"
- },
- {
-  "term": "동창",
-  "trend": [
-   154,
-   176,
-   135
-  ],
-  "startDate": "10/28",
-  "endDate": "10/30",
-  "lastUpdate": "10.30 06:00"
- },
- {
-  "term": "마지막",
-  "trend": [
-   63,
-   74,
-   135
-  ],
-  "startDate": "10/28",
-  "endDate": "10/30",
-  "lastUpdate": "10.30 06:00"
- },
- {
-  "term": "축구",
-  "trend": [
-   156,
-   153,
-   134
-  ],
-  "startDate": "10/28",
-  "endDate": "10/30",
-  "lastUpdate": "10.30 06:00"
- },
- {
-  "term": "무술",
-  "trend": [
-   0,
-   171,
-   131
-  ],
-  "startDate": "10/28",
-  "endDate": "10/30",
-  "lastUpdate": "10.30 06:00"
- },
- {
-  "term": "피하는",
-  "trend": [
-   0,
-   150,
-   130
-  ],
-  "startDate": "10/28",
-  "endDate": "10/30",
-  "lastUpdate": "10.30 06:00"
+  "lastUpdate": "10.30 08:00"
  },
  {
   "term": "유시민",
   "trend": [
    0,
    164,
-   130
+   157
   ],
   "startDate": "10/28",
   "endDate": "10/30",
-  "lastUpdate": "10.30 06:00"
+  "lastUpdate": "10.30 08:00"
  },
  {
-  "term": "보고",
+  "term": "중국",
   "trend": [
    0,
-   104,
-   129
+   193,
+   155
   ],
   "startDate": "10/28",
   "endDate": "10/30",
-  "lastUpdate": "10.30 06:00"
+  "lastUpdate": "10.30 08:00"
+ },
+ {
+  "term": "이어",
+  "trend": [
+   48,
+   188,
+   154
+  ],
+  "startDate": "10/28",
+  "endDate": "10/30",
+  "lastUpdate": "10.30 08:00"
+ },
+ {
+  "term": "숏드라마",
+  "trend": [
+   42,
+   241,
+   153
+  ],
+  "startDate": "10/28",
+  "endDate": "10/30",
+  "lastUpdate": "10.30 08:00"
+ },
+ {
+  "term": "이번에",
+  "trend": [
+   0,
+   195,
+   147
+  ],
+  "startDate": "10/28",
+  "endDate": "10/30",
+  "lastUpdate": "10.30 08:00"
+ },
+ {
+  "term": "2026년",
+  "trend": [
+   87,
+   253,
+   145
+  ],
+  "startDate": "10/28",
+  "endDate": "10/30",
+  "lastUpdate": "10.30 08:00"
+ },
+ {
+  "term": "만에",
+  "trend": [
+   38,
+   200,
+   143
+  ],
+  "startDate": "10/28",
+  "endDate": "10/30",
+  "lastUpdate": "10.30 08:00"
+ },
+ {
+  "term": "마지막",
+  "trend": [
+   63,
+   74,
+   138
+  ],
+  "startDate": "10/28",
+  "endDate": "10/30",
+  "lastUpdate": "10.30 08:00"
+ },
+ {
+  "term": "꺼낸",
+  "trend": [
+   40,
+   221,
+   138
+  ],
+  "startDate": "10/28",
+  "endDate": "10/30",
+  "lastUpdate": "10.30 08:00"
+ },
+ {
+  "term": "동창",
+  "trend": [
+   154,
+   176,
+   136
+  ],
+  "startDate": "10/28",
+  "endDate": "10/30",
+  "lastUpdate": "10.30 08:00"
+ },
+ {
+  "term": "축구",
+  "trend": [
+   156,
+   153,
+   135
+  ],
+  "startDate": "10/28",
+  "endDate": "10/30",
+  "lastUpdate": "10.30 08:00"
+ },
+ {
+  "term": "피하는",
+  "trend": [
+   0,
+   150,
+   133
+  ],
+  "startDate": "10/28",
+  "endDate": "10/30",
+  "lastUpdate": "10.30 08:00"
+ },
+ {
+  "term": "무술",
+  "trend": [
+   0,
+   171,
+   132
+  ],
+  "startDate": "10/28",
+  "endDate": "10/30",
+  "lastUpdate": "10.30 08:00"
  },
  {
   "term": "10월",
   "trend": [
    87,
    246,
-   128
+   130
   ],
   "startDate": "10/28",
   "endDate": "10/30",
-  "lastUpdate": "10.30 06:00"
+  "lastUpdate": "10.30 08:00"
  },
  {
-  "term": "사이다",
+  "term": "만든",
   "trend": [
-   53,
-   168,
-   124
+   224,
+   166,
+   126
   ],
   "startDate": "10/28",
   "endDate": "10/30",
-  "lastUpdate": "10.30 06:00"
+  "lastUpdate": "10.30 08:00"
  },
  {
   "term": "사돈",
   "trend": [
    0,
    125,
-   124
+   125
   ],
   "startDate": "10/28",
   "endDate": "10/30",
-  "lastUpdate": "10.30 06:00"
+  "lastUpdate": "10.30 08:00"
+ },
+ {
+  "term": "사이다",
+  "trend": [
+   53,
+   168,
+   125
+  ],
+  "startDate": "10/28",
+  "endDate": "10/30",
+  "lastUpdate": "10.30 08:00"
  },
  {
   "term": "남편의",
   "trend": [
    38,
    40,
+   124
+  ],
+  "startDate": "10/28",
+  "endDate": "10/30",
+  "lastUpdate": "10.30 08:00"
+ },
+ {
+  "term": "게임",
+  "trend": [
+   80,
+   235,
    120
   ],
   "startDate": "10/28",
   "endDate": "10/30",
-  "lastUpdate": "10.30 06:00"
+  "lastUpdate": "10.30 08:00"
+ },
+ {
+  "term": "힘든",
+  "trend": [
+   0,
+   51,
+   119
+  ],
+  "startDate": "10/28",
+  "endDate": "10/30",
+  "lastUpdate": "10.30 08:00"
  },
  {
   "term": "혼자만",
   "trend": [
    119,
    185,
-   118
+   119
   ],
   "startDate": "10/28",
   "endDate": "10/30",
-  "lastUpdate": "10.30 06:00"
+  "lastUpdate": "10.30 08:00"
  },
  {
   "term": "손석구",
@@ -778,29 +811,29 @@
   ],
   "startDate": "10/28",
   "endDate": "10/30",
-  "lastUpdate": "10.30 06:00"
- },
- {
-  "term": "보여주는",
-  "trend": [
-   84,
-   215,
-   117
-  ],
-  "startDate": "10/28",
-  "endDate": "10/30",
-  "lastUpdate": "10.30 06:00"
+  "lastUpdate": "10.30 08:00"
  },
  {
   "term": "시작된",
   "trend": [
    187,
    152,
-   117
+   118
   ],
   "startDate": "10/28",
   "endDate": "10/30",
-  "lastUpdate": "10.30 06:00"
+  "lastUpdate": "10.30 08:00"
+ },
+ {
+  "term": "보여주는",
+  "trend": [
+   84,
+   215,
+   118
+  ],
+  "startDate": "10/28",
+  "endDate": "10/30",
+  "lastUpdate": "10.30 08:00"
  },
  {
   "term": "계속",
@@ -811,128 +844,117 @@
   ],
   "startDate": "10/28",
   "endDate": "10/30",
-  "lastUpdate": "10.30 06:00"
- },
- {
-  "term": "만난",
-  "trend": [
-   198,
-   176,
-   115
-  ],
-  "startDate": "10/28",
-  "endDate": "10/30",
-  "lastUpdate": "10.30 06:00"
- },
- {
-  "term": "전설의",
-  "trend": [
-   148,
-   252,
-   113
-  ],
-  "startDate": "10/28",
-  "endDate": "10/30",
-  "lastUpdate": "10.30 06:00"
- },
- {
-  "term": "게임",
-  "trend": [
-   80,
-   235,
-   113
-  ],
-  "startDate": "10/28",
-  "endDate": "10/30",
-  "lastUpdate": "10.30 06:00"
- },
- {
-  "term": "만든",
-  "trend": [
-   224,
-   166,
-   112
-  ],
-  "startDate": "10/28",
-  "endDate": "10/30",
-  "lastUpdate": "10.30 06:00"
- },
- {
-  "term": "엔믹스",
-  "trend": [
-   148,
-   130,
-   111
-  ],
-  "startDate": "10/28",
-  "endDate": "10/30",
-  "lastUpdate": "10.30 06:00"
- },
- {
-  "term": "않는",
-  "trend": [
-   121,
-   173,
-   111
-  ],
-  "startDate": "10/28",
-  "endDate": "10/30",
-  "lastUpdate": "10.30 06:00"
+  "lastUpdate": "10.30 08:00"
  },
  {
   "term": "황희찬",
   "trend": [
    53,
    82,
-   110
+   116
   ],
   "startDate": "10/28",
   "endDate": "10/30",
-  "lastUpdate": "10.30 06:00"
+  "lastUpdate": "10.30 08:00"
+ },
+ {
+  "term": "만난",
+  "trend": [
+   198,
+   176,
+   116
+  ],
+  "startDate": "10/28",
+  "endDate": "10/30",
+  "lastUpdate": "10.30 08:00"
+ },
+ {
+  "term": "않는",
+  "trend": [
+   121,
+   173,
+   114
+  ],
+  "startDate": "10/28",
+  "endDate": "10/30",
+  "lastUpdate": "10.30 08:00"
+ },
+ {
+  "term": "전설의",
+  "trend": [
+   148,
+   252,
+   114
+  ],
+  "startDate": "10/28",
+  "endDate": "10/30",
+  "lastUpdate": "10.30 08:00"
+ },
+ {
+  "term": "엔믹스",
+  "trend": [
+   148,
+   130,
+   112
+  ],
+  "startDate": "10/28",
+  "endDate": "10/30",
+  "lastUpdate": "10.30 08:00"
  },
  {
   "term": "주진우",
   "trend": [
    158,
    173,
-   110
+   111
   ],
   "startDate": "10/28",
   "endDate": "10/30",
-  "lastUpdate": "10.30 06:00"
+  "lastUpdate": "10.30 08:00"
  },
  {
   "term": "상견례에서",
   "trend": [
    0,
    120,
-   104
+   106
   ],
   "startDate": "10/28",
   "endDate": "10/30",
-  "lastUpdate": "10.30 06:00"
+  "lastUpdate": "10.30 08:00"
+ },
+ {
+  "term": "대놓고",
+  "trend": [
+   0,
+   60,
+   105
+  ],
+  "startDate": "10/28",
+  "endDate": "10/30",
+  "lastUpdate": "10.30 08:00"
  },
  {
   "term": "아버지의",
   "trend": [
    0,
    140,
-   104
+   105
   ],
   "startDate": "10/28",
   "endDate": "10/30",
-  "lastUpdate": "10.30 06:00"
+  "lastUpdate": "10.30 08:00"
  },
  {
   "term": "단독",
   "trend": [
    6,
    149,
-   104
+   105
   ],
   "startDate": "10/28",
   "endDate": "10/30",
-  "lastUpdate": "10.30 06:00"
+  "lastUpdate": "10.30 08:00"
  },
  {
   "term": "강호동",
@@ -943,73 +965,62 @@
   ],
   "startDate": "10/28",
   "endDate": "10/30",
-  "lastUpdate": "10.30 06:00"
- },
- {
-  "term": "아이찡",
-  "trend": [
-   0,
-   206,
-   102
-  ],
-  "startDate": "10/28",
-  "endDate": "10/30",
-  "lastUpdate": "10.30 06:00"
+  "lastUpdate": "10.30 08:00"
  },
  {
   "term": "남편",
   "trend": [
    0,
    52,
-   102
+   103
   ],
   "startDate": "10/28",
   "endDate": "10/30",
-  "lastUpdate": "10.30 06:00"
+  "lastUpdate": "10.30 08:00"
  },
  {
-  "term": "시니어",
+  "term": "아이찡",
   "trend": [
-   63,
-   242,
-   102
+   0,
+   206,
+   103
   ],
   "startDate": "10/28",
   "endDate": "10/30",
-  "lastUpdate": "10.30 06:00"
+  "lastUpdate": "10.30 08:00"
  },
  {
   "term": "반전드라마",
   "trend": [
    63,
    215,
-   102
+   103
   ],
   "startDate": "10/28",
   "endDate": "10/30",
-  "lastUpdate": "10.30 06:00"
+  "lastUpdate": "10.30 08:00"
+ },
+ {
+  "term": "시니어",
+  "trend": [
+   63,
+   242,
+   103
+  ],
+  "startDate": "10/28",
+  "endDate": "10/30",
+  "lastUpdate": "10.30 08:00"
  },
  {
   "term": "에이티즈",
   "trend": [
    465,
    117,
-   101
+   102
   ],
   "startDate": "10/28",
   "endDate": "10/30",
-  "lastUpdate": "10.30 06:00"
- },
- {
-  "term": "대놓고",
-  "trend": [
-   0,
-   60,
-   101
-  ],
-  "startDate": "10/28",
-  "endDate": "10/30",
-  "lastUpdate": "10.30 06:00"
+  "lastUpdate": "10.30 08:00"
  },
  {
   "term": "기다리던",
@@ -1020,7 +1031,7 @@
   ],
   "startDate": "10/28",
   "endDate": "10/30",
-  "lastUpdate": "10.30 06:00"
+  "lastUpdate": "10.30 08:00"
  },
  {
   "term": "많이",
@@ -1031,7 +1042,7 @@
   ],
   "startDate": "10/28",
   "endDate": "10/30",
-  "lastUpdate": "10.30 06:00"
+  "lastUpdate": "10.30 08:00"
  },
  {
   "term": "있다",
@@ -1042,7 +1053,18 @@
   ],
   "startDate": "10/28",
   "endDate": "10/30",
-  "lastUpdate": "10.30 06:00"
+  "lastUpdate": "10.30 08:00"
+ },
+ {
+  "term": "아나운서",
+  "trend": [
+   0,
+   59,
+   99
+  ],
+  "startDate": "10/28",
+  "endDate": "10/30",
+  "lastUpdate": "10.30 08:00"
  },
  {
   "term": "학생",
@@ -1053,50 +1075,28 @@
   ],
   "startDate": "10/28",
   "endDate": "10/30",
-  "lastUpdate": "10.30 06:00"
- },
- {
-  "term": "아나운서",
-  "trend": [
-   0,
-   59,
-   98
-  ],
-  "startDate": "10/28",
-  "endDate": "10/30",
-  "lastUpdate": "10.30 06:00"
+  "lastUpdate": "10.30 08:00"
  },
  {
   "term": "얼굴",
   "trend": [
    0,
    134,
-   97
+   98
   ],
   "startDate": "10/28",
   "endDate": "10/30",
-  "lastUpdate": "10.30 06:00"
+  "lastUpdate": "10.30 08:00"
  },
  {
   "term": "비밀",
   "trend": [
    125,
    111,
-   95
+   96
   ],
   "startDate": "10/28",
   "endDate": "10/30",
-  "lastUpdate": "10.30 06:00"
- },
- {
-  "term": "아닌데",
-  "trend": [
-   145,
-   114,
-   94
-  ],
-  "startDate": "10/28",
-  "endDate": "10/30",
-  "lastUpdate": "10.30 06:00"
+  "lastUpdate": "10.30 08:00"
  }
 ]
