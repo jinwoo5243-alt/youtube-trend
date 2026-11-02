@@ -56,9 +56,9 @@ h1{font-size:18px;margin:0 0 4px}
 <span class="sep"></span>
 <span class="lbl">구독자</span>
 <button data-sub="전체" class="sbtn on">전체</button>
-<button data-sub="a" class="sbtn">1만 미만</button>
-<button data-sub="b" class="sbtn">5만 미만</button>
-<button data-sub="c" class="sbtn">5만 이상</button>
+<button data-sub="a" class="sbtn">1만 이하</button>
+<button data-sub="b" class="sbtn">1~5만</button>
+<button data-sub="c" class="sbtn">5만 초과</button>
 <select id="kw"><option value="">카테고리/키워드 전체</option></select>
 <select id="sort">
 <option value="조회수">조회수순</option>
@@ -72,7 +72,7 @@ const DATA=[{"구분": "쇼츠", "국가구분": "해외", "제목": "📝Kindne
 let fil="전체",reg="전체",sub="전체";
 const SHORTS_MAX=180;
 DATA.forEach(d=>{d.구분=(Number(d.길이초)||0)<=SHORTS_MAX?'쇼츠':'영상';});
-const SUBF={a:n=>n<10000,b:n=>n>=10000&&n<50000,c:n=>n>=50000};
+const SUBF={a:n=>n<=10000,b:n=>n>10000&&n<=50000,c:n=>n>50000};
 function matchSub(d){if(sub=='전체')return true;const n=d.채널구독자수;if(n==null)return false;return SUBF[sub](Number(n));}
 const grid=document.getElementById('grid'),kw=document.getElementById('kw'),sort=document.getElementById('sort');
 [...new Set(DATA.map(d=>d.키워드))].forEach(k=>{const o=document.createElement('option');o.value=k;o.textContent=k;kw.appendChild(o)});
