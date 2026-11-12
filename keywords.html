@@ -308,5 +308,5 @@ fetch('data/keywords_7d.json',{cache:'no-store'})
   .then(j=>{ DATA=buildData(j); document.getElementById('src').textContent='데이터: data/keywords_7d.json'; render(); })
   .catch(()=>{ DATA=buildData(DEMO); document.getElementById('src').textContent='※ 데모 데이터 표시 중 (data/keywords_7d.json 생성 시 자동 교체)'; render(); });
 </script>
-<script src="data/feedback_log.js"></script><script src="feedback.js"></script>
+<script src="data/feedback_log.js?v=202611122243"></script><script src="feedback.js?v=202611122243"></script>
 </body></html>

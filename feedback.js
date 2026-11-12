@@ -98,8 +98,20 @@
     var c = /###\s*내용\s*\n+([\s\S]*?)(\n---\n|$)/.exec(body);
     return { kind: k ? k[1].trim() : "", text: c ? c[1].trim() : body.trim() };
   }
-  function load() {
-    if (cache) return Promise.resolve(cache);
+  // 반영 기록은 GitHub Pages가 10분 캐시하므로, 목록을 열 때마다 새로 받아 온다
+  function freshLog() {
+    return new Promise(function (ok) {
+      var s = document.createElement("script");
+      s.src = "data/feedback_log.js?t=" + Date.now();
+      s.onload = s.onerror = function () { s.remove(); ok(); };
+      document.head.appendChild(s);
+    });
+  }
+  function load(force) {
+    if (cache && !force) return Promise.resolve(cache);
+    return freshLog().then(loadMerged);
+  }
+  function loadMerged() {
     var byNo = {};
     logItems().forEach(function (x) { byNo[x.번호] = Object.assign({}, x); });
     return fetch("https://api.github.com/repos/" + REPO + "/issues?state=all&per_page=100&sort=created&direction=desc")
@@ -133,7 +145,7 @@
   fab.querySelector(".fbw-l").onclick = function () {
     var bg = modal("<h2>📋 수정사항 목록</h2><p class='fbw-d'>불러오는 중…</p>");
     var m = bg.querySelector(".fbw-m");
-    load().then(function (res) {
+    load(true).then(function (res) {
       var tab = "전체";
       var upd = window.FEEDBACK_LOG && window.FEEDBACK_LOG.updated;
       function draw() {
