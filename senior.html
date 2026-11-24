@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="ko"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>시니어 채널 평균 조회수</title>
+<style>
+:root{--bg:#f6f7f9;--card:#fff;--fg:#1a1a1a;--sub:#666;--line:#e5e7eb;--accent:#c4302b;--chip:#f1f2f4;--good:#0f7b4f}
+@media (prefers-color-scheme:dark){:root{--bg:#15171a;--card:#1f2226;--fg:#eceef0;--sub:#9aa0a6;--line:#2c2f34;--chip:#2a2e33;--good:#34d399}}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--fg);font-family:'Malgun Gothic','Apple SD Gothic Neo',system-ui,sans-serif}
+header{padding:16px 20px;border-bottom:1px solid var(--line);position:sticky;top:0;background:var(--bg);z-index:5}
+h1{font-size:18px;margin:0 0 4px}
+.top{display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap}
+.nav{font-size:13px;font-weight:600;padding:6px 14px;border-radius:20px;background:var(--card);color:var(--fg);border:1px solid var(--line);text-decoration:none;white-space:nowrap}
+.meta{color:var(--sub);font-size:13px;line-height:1.5}
+.bar{display:flex;flex-wrap:wrap;gap:8px;margin-top:12px;align-items:center}
+.bar button,.bar select{font:inherit;padding:6px 12px;border:1px solid var(--line);background:var(--card);color:var(--fg);border-radius:20px;cursor:pointer}
+.bar button.on{background:var(--accent);color:#fff;border-color:var(--accent)}
+.bar .lbl{font-size:12px;color:var(--sub);margin-left:4px}
+.bar .sep{width:1px;height:20px;background:var(--line)}
+.wrap{padding:18px 20px}
+.tw{overflow-x:auto;background:var(--card);border:1px solid var(--line);border-radius:12px}
+table{border-collapse:collapse;width:100%;min-width:900px;font-size:13px}
+th,td{padding:10px 10px;border-bottom:1px solid var(--line);text-align:left;vertical-align:middle}
+th{font-size:12px;color:var(--sub);font-weight:600;white-space:nowrap;background:var(--card);position:sticky;top:0}
+td.n,th.n{text-align:right;font-variant-numeric:tabular-nums;white-space:nowrap}
+tr:last-child td{border-bottom:0}
+.ch{display:flex;align-items:center;gap:10px;min-width:200px}
+.ch img{width:36px;height:36px;border-radius:50%;flex:none;background:var(--line)}
+.ch a{color:var(--fg);font-weight:600;text-decoration:none}
+.ch a:hover{text-decoration:underline}
+.small{font-size:11px;color:var(--sub)}
+.big{font-weight:700;font-size:14px}
+.warn{color:var(--accent);font-size:11px}
+.fit{display:inline-block;min-width:42px;text-align:center;padding:2px 6px;border-radius:10px;font-size:11px;font-weight:700;background:var(--chip)}
+.fit.hi{color:var(--good)}
+.top1{max-width:300px}
+.top1 a{color:var(--fg);text-decoration:none;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden;line-height:1.35}
+.top1 a:hover{text-decoration:underline}
+.kw{display:flex;flex-wrap:wrap;gap:3px;margin-top:3px}
+.kw span{font-size:10px;padding:1px 6px;border-radius:8px;background:var(--chip);color:var(--sub)}
+.note{font-size:12px;color:var(--sub);margin-top:12px;line-height:1.6}
+.empty{padding:40px;text-align:center;color:var(--sub)}
+</style></head><body>
+<header>
+<div class="top"><h1>👵 시니어 채널 — 평균 조회수 순</h1><a class="nav" href="index.html">← 트렌딩 수집으로</a></div>
+<div class="meta" id="meta"></div>
+<div class="bar">
+<span class="lbl">보기</span>
+<button class="mbtn on" data-m="all">전체</button>
+<button class="mbtn" data-m="hot" title="마지막 롱폼이 30일 안이고, 30일 안에 올린 롱폼 중 10만 회 넘은 영상이 있는 채널">🔥 1달 내 롱폼 10만+</button>
+<span class="sep"></span>
+<span class="lbl">시니어 비중</span>
+<button class="fbtn" data-fit="0">전체</button>
+<button class="fbtn on" data-fit="0.3" title="최근 롱폼 제목 중 시니어 단어(사연·노후·연금·며느리·60대…)가 들어간 비율">30% 이상</button>
+<button class="fbtn" data-fit="0.7">70% 이상</button>
+<span class="sep"></span>
+<span class="lbl">구독자</span>
+<button class="sbtn on" data-sub="all">전체</button>
+<button class="sbtn" data-sub="a">5만 이하</button>
+<button class="sbtn" data-sub="b">5~30만</button>
+<button class="sbtn" data-sub="c">30만 초과</button>
+<span class="sep"></span>
+<select id="sort">
+<option value="avg">평균 조회수순</option>
+<option value="median">중앙값 조회수순 (대박 1편 영향 뺀 값)</option>
+<option value="eff">구독자 대비 조회수순 (작은데 잘 나오는)</option>
+<option value="perWeek">업로드 많은 순</option>
+<option value="hotV">1달 내 최고 롱폼 조회순</option>
+</select>
+<span class="lbl" id="cnt"></span>
+</div></header>
+<div class="wrap">
+<div class="tw"><table>
+<thead><tr><th>#</th><th>채널</th><th class="n">최근 평균</th><th class="n">중앙값</th><th class="n">구독자</th><th class="n">구독 대비</th><th>시니어 비중</th><th class="n">주당 업로드</th><th class="n">평균 길이</th><th id="topth">최고 영상</th></tr></thead>
+<tbody id="tb"></tbody></table></div>
+<div class="note" id="note"></div>
+</div>
+<script src="data/senior_channels.js"></script>
+<script>
+const S=window.SENIOR||{channels:[]};
+let fit=0.3,sub='all',mode='all';
+const CUT=new Date(Date.now()-30*864e5).toISOString().slice(0,10);
+const SUBF={all:()=>true,a:n=>n!=null&&n<=50000,b:n=>n!=null&&n>50000&&n<=300000,c:n=>n!=null&&n>300000};
+const fmt=n=>n==null?'비공개':Number(n).toLocaleString();
+function man(n){if(n==null)return'-';if(n>=1e8)return(n/1e8).toFixed(1)+'억';if(n>=1e4)return(n/1e4).toFixed(n>=1e5?0:1)+'만';return n.toLocaleString()}
+function esc(s){return String(s??'').replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]))}
+S.channels.forEach(c=>{c.eff=c.subs?c.avg/c.subs:0;
+ const all=[...(c.fresh||[]),...(c.vids||[])];
+ c.last=all.reduce((a,x)=>!a||x.p>a.p?x:a,null);
+ c.hot=all.filter(x=>x.p>=CUT&&x.v>=100000).sort((a,b)=>b.v-a.v);
+ c.hotV=c.hot.length?c.hot[0].v:0;
+ c.isHot=!!(c.last&&c.last.p>=CUT&&c.hot.length);});
+document.getElementById('meta').innerHTML=`조사일 ${esc(S.updated||'-')} · 채널별 최근 롱폼(3분 이상) ${S.recentN||20}편 평균 · 검색 키워드: ${(S.keywords||[]).map(esc).join(', ')}`;
+document.getElementById('note').innerHTML='· <b>최근 평균</b>: 올린 지 3일 넘은 최근 롱폼 최대 20편의 평균 조회수. 평균은 높은데 중앙값이 훨씬 낮으면(⚠) 대박 1~2편이 끌어올린 것.<br>· <b>시니어 비중</b>: 그 20편 제목 중 시니어 단어가 들어간 비율. 낮으면 경제·시사처럼 시니어도 보는 일반 채널.<br>· <b>구독 대비</b>: 평균 조회수 ÷ 구독자. 1배를 넘으면 구독자보다 조회가 많이 나오는, 알고리즘을 잘 타는 채널.<br>· 데이터: YouTube Data API(무료 할당량). 갱신은 <code>수집기\\시니어채널.py</code> 실행.';
+function render(){
+ const key=document.getElementById('sort').value;
+ document.getElementById('topth').textContent=mode=='hot'?'1달 내 10만+ 롱폼':'최고 영상';
+ const rows=S.channels.filter(c=>c.fit>=fit&&SUBF[sub](c.subs)&&(mode=='all'||c.isHot)).sort((a,b)=>(b[key]||0)-(a[key]||0));
+ document.getElementById('cnt').textContent=`${rows.length}개 채널`;
+ document.getElementById('tb').innerHTML=rows.length?rows.map((c,i)=>{
+  const skew=c.median<c.avg*0.3;
+  return `<tr>
+  <td class="small">${i+1}</td>
+  <td><div class="ch"><img loading="lazy" src="${esc(c.thumb)}" alt=""><div><a href="https://www.youtube.com/channel/${esc(c.id)}" target="_blank" rel="noopener">${esc(c.name)}</a>
+   <div class="kw">${c.keywords.map(k=>`<span>${esc(k)}</span>`).join('')}</div></div></div></td>
+  <td class="n"><span class="big">${man(c.avg)}</span></td>
+  <td class="n">${man(c.median)}${skew?'<div class="warn">⚠ 대박 편중</div>':''}</td>
+  <td class="n">${man(c.subs)}</td>
+  <td class="n">${c.subs?c.eff.toFixed(1)+'배':'-'}</td>
+  <td><span class="fit ${c.fit>=0.7?'hi':''}">${Math.round(c.fit*100)}%</span></td>
+  <td class="n">${c.perWeek}편</td>
+  <td class="n">${c.avgMin}분</td>
+  <td class="top1">${mode=='hot'?c.hot.slice(0,3).map(h=>`<div style="margin-bottom:4px"><a href="https://youtu.be/${esc(h.id)}" target="_blank" rel="noopener">${esc(h.t)}</a><div class="small">조회 <b>${man(h.v)}</b> · ${esc(h.p)}${c.last&&h.id==c.last.id?' · 마지막 롱폼':''}</div></div>`).join('')+(c.hot.length>3?`<div class="small">외 ${c.hot.length-3}편</div>`:'')+`<div class="small">마지막 롱폼 ${esc(c.last.p)} (조회 ${man(c.last.v)})</div>`
+   :`<a href="https://youtu.be/${esc(c.top.id)}" target="_blank" rel="noopener">${esc(c.top.title)}</a><div class="small">조회 ${man(c.top.views)} · 최근 업로드 ${esc(c.lastPub)}</div>`}</td>
+ </tr>`}).join(''):'<tr><td colspan="10" class="empty">조건에 맞는 채널이 없습니다.</td></tr>';
+}
+function bind(sel,set){document.querySelectorAll(sel).forEach(b=>b.onclick=()=>{document.querySelectorAll(sel).forEach(x=>x.classList.remove('on'));b.classList.add('on');set(b);render()})}
+bind('.mbtn',b=>{mode=b.dataset.m;document.getElementById('sort').value=mode=='hot'?'hotV':'avg'});
+bind('.fbtn',b=>fit=Number(b.dataset.fit));
+bind('.sbtn',b=>sub=b.dataset.sub);
+document.getElementById('sort').onchange=render;
+render();
+</script>
+</body></html>
