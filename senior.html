@@ -68,7 +68,7 @@ tr:last-child td{border-bottom:0}
 <div class="wrap">
 <div id="vidv" class="grid" hidden></div>
 <div class="tw" id="chv"><table>
-<thead><tr><th>#</th><th>채널</th><th class="n">최근 평균</th><th class="n">중앙값</th><th class="n">구독자</th><th class="n">채널 개설</th><th class="n">구독 대비</th><th>시니어 비중</th><th class="n">주당 업로드</th><th class="n">평균 길이</th><th id="topth">최고 영상</th></tr></thead>
+<thead><tr><th>#</th><th>채널</th><th class="n">최근 평균</th><th class="n">10만+ 롱폼</th><th class="n">중앙값</th><th class="n">구독자</th><th class="n">채널 개설</th><th class="n">구독 대비</th><th>시니어 비중</th><th class="n">주당 업로드</th><th class="n">평균 길이</th><th id="topth">최고 영상</th></tr></thead>
 <tbody id="tb"></tbody></table></div>
 <div class="note" id="note"></div>
 </div>
@@ -89,6 +89,7 @@ S.channels.forEach(c=>{c.eff=c.subs?c.avg/c.subs:0;c.createdT=c.created?Date.par
  c.hot=all.filter(x=>x.p>=CUT&&x.v>=100000).sort((a,b)=>b.v-a.v);
  c.hotV=c.hot.length?c.hot[0].v:0;
  c.maxV=all.reduce((m,x)=>Math.max(m,x.v),0);
+ c.n10=all.filter(x=>x.v>=100000).length;c.nAll=all.length;
  c.isHot=!!(c.last&&c.last.p>=CUT&&c.hot.length);});
 document.getElementById('meta').innerHTML=`조사일 ${esc(S.updated||'-')} · 채널별 최근 롱폼(3분 이상) ${S.recentN||20}편 평균 · 검색 키워드: ${(S.keywords||[]).map(esc).join(', ')}`;
 document.getElementById('note').innerHTML='· <b>최근 평균</b>: 올린 지 3일 넘은 최근 롱폼 최대 20편의 평균 조회수. 평균은 높은데 중앙값이 훨씬 낮으면(⚠) 대박 1~2편이 끌어올린 것.<br>· <b>시니어 비중</b>: 그 20편 제목 중 시니어 단어가 들어간 비율. 낮으면 경제·시사처럼 시니어도 보는 일반 채널.<br>· <b>구독 대비</b>: 평균 조회수 ÷ 구독자. 1배를 넘으면 구독자보다 조회가 많이 나오는, 알고리즘을 잘 타는 채널.<br>· 데이터: YouTube Data API(무료 할당량). 갱신은 <code>수집기\\시니어채널.py</code> 실행.';
@@ -109,6 +110,7 @@ function render(){
   <td><div class="ch"><img loading="lazy" src="${esc(c.thumb)}" alt=""><div><a href="https://www.youtube.com/channel/${esc(c.id)}" target="_blank" rel="noopener">${esc(c.name)}</a>
    <div class="kw">${c.keywords.map(k=>`<span>${esc(k)}</span>`).join('')}</div></div></div></td>
   <td class="n"><span class="big">${man(c.avg)}</span></td>
+  <td class="n"><span class="big" style="color:#e11d2a">${c.n10}편</span><div class="small">전체 ${c.nAll}편 중</div></td>
   <td class="n">${man(c.median)}${skew?'<div class="warn">⚠ 대박 편중</div>':''}</td>
   <td class="n">${man(c.subs)}</td>
   <td class="n">${c.created?`${esc(c.created)}<div class="small">${age(c.created)}</div>`:'-'}</td>
@@ -118,7 +120,7 @@ function render(){
   <td class="n">${c.avgMin}분</td>
   <td class="top1">${mode=='hot'?c.hot.slice(0,3).map(h=>`<div style="margin-bottom:4px"><a href="https://youtu.be/${esc(h.id)}" target="_blank" rel="noopener">${esc(h.t)}</a><div class="small">조회 <b>${man(h.v)}</b> · ${esc(h.p)}${c.last&&h.id==c.last.id?' · 마지막 롱폼':''}</div></div>`).join('')+(c.hot.length>3?`<div class="small">외 ${c.hot.length-3}편</div>`:'')+`<div class="small">마지막 롱폼 ${esc(c.last.p)} (조회 ${man(c.last.v)})</div>`
    :`<a href="https://youtu.be/${esc(c.top.id)}" target="_blank" rel="noopener">${esc(c.top.title)}</a><div class="small">조회 ${man(c.top.views)} · 최근 업로드 ${esc(c.lastPub)}</div>`}</td>
- </tr>`}).join(''):'<tr><td colspan="11" class="empty">조건에 맞는 채널이 없습니다.</td></tr>';
+ </tr>`}).join(''):'<tr><td colspan="12" class="empty">조건에 맞는 채널이 없습니다.</td></tr>';
 }
 function renderVid(){
  const seen=new Set(),vs=[];
